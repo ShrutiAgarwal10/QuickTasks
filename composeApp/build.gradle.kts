@@ -83,3 +83,10 @@ dependencies {
     debugImplementation(compose.uiTooling)
 }
 
+sqldelight {
+    databases {
+        create("QuickTasksDb") {
+            packageName.set("org.shruti")
+        }
+    }
+}
