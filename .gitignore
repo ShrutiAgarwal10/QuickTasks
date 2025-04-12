@@ -1,0 +1,64 @@
+*.iml
+.kotlin
+.gradle
+**/build/
+xcuserdata
+!src/**/build/
+local.properties
+.idea
+.DS_Store
+captures
+.externalNativeBuild
+.cxx
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+
+# IntelliJ / Android Studio
+*.iml
+.idea/
+.DS_Store
+
+# Gradle
+.gradle/
+**/build/
+!src/**/build/  # (Optional: only if needed for local debug builds)
+
+# Kotlin / Java
+.kotlin/
+*.class
+*.jar
+*.log
+
+# Android Specific
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# SQLDelight (auto-generated code)
+**/build/generated/
+*.db
+
+# iOS/macOS
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+DerivedData/
+
+# VSCode (just in case)
+.vscode/
+
+# Ignore APKs/AARs
+*.apk
+*.aar
