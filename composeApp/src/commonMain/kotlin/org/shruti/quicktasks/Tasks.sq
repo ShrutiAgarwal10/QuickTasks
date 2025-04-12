@@ -1,0 +1,17 @@
+CREATE TABLE Task (
+    id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    content TEXT NOT NULL,
+    isCompleted INTEGER NOT NULL DEFAULT 0
+);
+
+selectAll:
+SELECT * FROM Task;
+
+insertTask:
+INSERT INTO Task(content, isCompleted) VALUES (?, ?);
+
+deleteTask:
+DELETE FROM Task WHERE id = ?;
+
+updateCompleted:
+UPDATE Task SET isCompleted = ? WHERE id = ?;
