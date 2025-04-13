@@ -10,6 +10,19 @@ class TasksRepository(
 
     private val queries = localDatabase.provideQuickTasksDbQueries()
 
+    // Get all tasks as Flow
+    val allTasks: Flow<List<Tasks>> = queries.selectAll()
+        .asFlow()
+        .map { query ->
+            query.executeAsList().map {
+                Tasks(
+                    id = it.id.toInt(),
+                    content = it.content,
+                    isCompleted = it.isCompleted.toInt() != 0
+                )
+            }
+        }
+
     // Insert a new task
     suspend fun addTask(content: String, isCompleted: Boolean = false) {
         queries.insertTask(
