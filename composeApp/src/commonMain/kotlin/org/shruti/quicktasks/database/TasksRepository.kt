@@ -23,5 +23,12 @@ class TasksRepository(
         queries.deleteTask(id.toLong())
     }
 
+    // Update completion status of task
+    suspend fun updateCompleted(id: Int, isCompleted: Boolean) {
+        queries.updateCompleted(
+            isCompleted = if (isCompleted) 1 else 0,
+            id = id.toLong()
+        )
+    }
 
 }
