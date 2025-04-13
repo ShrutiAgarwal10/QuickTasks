@@ -10,5 +10,12 @@ class TasksRepository(
 
     private val queries = localDatabase.provideQuickTasksDbQueries()
 
+    // Insert a new task
+    suspend fun addTask(content: String, isCompleted: Boolean = false) {
+        queries.insertTask(
+            content = content,
+            isCompleted = if (isCompleted) 1 else 0
+        )
+    }
 
 }
