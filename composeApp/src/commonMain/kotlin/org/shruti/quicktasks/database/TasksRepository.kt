@@ -18,4 +18,10 @@ class TasksRepository(
         )
     }
 
+    // Delete a task by ID
+    suspend fun deleteTask(id: Int) {
+        queries.deleteTask(id.toLong())
+    }
+
+
 }
