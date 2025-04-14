@@ -11,7 +11,7 @@
 - ✅ Cross-platform UI with Jetpack Compose Multiplatform
 - ✅ Local storage using SQLDelight
 - ✅ Reactive data layer with Kotlin Flows
-- ✅ Clean, modern Material 3 design
+- ✅ Clean, modern Material design
 
 ---
 
