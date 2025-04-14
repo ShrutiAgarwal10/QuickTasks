@@ -1,14 +1,50 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# 📋 QuickTasks
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+**QuickTasks** is a minimalist yet powerful **Compose Multiplatform** To-Do application built with Kotlin Multiplatform Mobile (KMM), SQLDelight, and StateFlow. It supports full CRUD operations, reactive UI updates, and runs seamlessly on both Android and iOS.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+---
 
+## ✨ Features
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+- ✅ Add, update, delete tasks
+- ✅ Mark tasks as completed/incomplete
+- ✅ Cross-platform UI with Jetpack Compose Multiplatform
+- ✅ Local storage using SQLDelight
+- ✅ Reactive data layer with Kotlin Flows
+- ✅ Clean, modern Material 3 design
+
+---
+
+## 🛠️ Built With
+
+- **Jetpack Compose Multiplatform** — UI layer for Android and iOS
+- **Kotlin Multiplatform** — shared business logic
+- **SQLDelight** — type-safe database and schema management
+- **Kotlin Flows** — reactive state updates
+- **StateFlow + ViewModel** — state management
+- **Android Studio Giraffe or later**
+
+---
+
+## 📱 UI Preview
+
+| Add Task | Task List |
+|----------|-----------|
+| ![Completed Screenshot](screenshots/completed.png) | ![Task List Screenshot](screenshots/list.png) |
+| ![Completed Screenshot (iOS)](screenshots/completed.ios.png) | ![Task List Screenshot (iOS)](screenshots/list.ios.png) |
+
+---
+
+## 🔧 How to Run
+
+### 🤖 Android
+1. Open the project in Android Studio
+2. Select Android module
+3. Click ▶️ to run on emulator/device
+
+### 👩🏻‍💻 iOS
+1. Open iOS module in Xcode (via `iosApp` folder)
+2. Select simulator
+3. Build & run using the Compose Multiplatform framework
+
+---
